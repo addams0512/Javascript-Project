@@ -1,89 +1,123 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/main_image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
 h1 {
-  text-align: center;
-  font-size: 30px;
+	text-align: center;
+	font-size: 30px;
+	color: red;
 }
 
 h2 {
-  text-align: center;
-  font-size: 50px;
-  padding: 10px 0;
+	text-align: center;
+	font-size: 50px;
+	padding: 10px 0;
+	color: beige;
 }
 
 .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
 }
 
 #increment-btn {
-  background-color: rgb(133, 34, 34);
-  color: aliceblue;
-  border: none;
-  border-radius: 5px;
-  width: 180px;
-  height: 30px;
-  font-weight: bold;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 14px;
+	background-color: #44008b;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	width: 180px;
+	height: 30px;
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 14px;
 }
 
 #increment-btn:hover {
-  background-color: aliceblue;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	background-color: aliceblue;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 #reset {
-  background-color: rgb(3, 73, 25);
-  color: aliceblue;
-  border: none;
-  border-radius: 5px;
-  width: 180px;
-  height: 30px;
-  font-weight: bold;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
+	background-color: #9f45b0;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	width: 180px;
+	height: 30px;
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-top: 10px;
 }
 
 #reset:hover {
-  background-color: aliceblue;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	background-color: aliceblue;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 #save-btn {
-  background-color: rgb(9, 7, 147);
-  color: aliceblue;
-  border: none;
-  border-radius: 5px;
-  width: 180px;
-  height: 30px;
-  font-weight: bold;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
+	background-color: #e54ed0;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	width: 180px;
+	height: 30px;
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-top: 10px;
 }
 
 #save-btn:hover {
-  background-color: aliceblue;
-  color: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	background-color: aliceblue;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 #save-el {
-  margin-top: 20px;
-  font-size: 18px;
+	margin-top: 20px;
+	font-size: 18px;
+	color: #44008b;
+	font-weight: bold;
+}
+
+#all-btn {
+	background-color: #ffc968;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	width: 180px;
+	height: 30px;
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+#all-btn:hover {
+	background-color: aliceblue;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

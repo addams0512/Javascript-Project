@@ -1,74 +1,84 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-
+@font-face {
+	font-family: "digital-clock-font";
+	src: url("./digital-7/digital-7.ttf");
+}
 #score-board {
-  background-color: #1b244a;
-  width: 575px;
-  height: 385px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	background-color: #1b244a;
+	width: 575px;
+	height: 385px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .center {
-  text-align: center;
-  line-height: 120px;
+	text-align: center;
+	line-height: 120px;
 }
 .row {
-  display: flex;
-  flex: row;
+	display: flex;
+	flex: row;
 }
 
 .team {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: aliceblue;
-  font-size: 40px;
-  font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: aliceblue;
+	font-size: 40px;
+	font-weight: bold;
 }
 
 .background-color {
-  background-color: #000;
+	background-color: #000;
 }
 
 .total-score {
-  color: #f94f6d;
-  font-size: 90px;
+	color: #f94f6d;
+	font-size: 90px;
+	font-family: "digital-clock-font";
 }
 
 .container1 {
-  width: 155px;
-  height: 40px;
-  margin: 10px 65px;
-  text-align: center;
+	width: 155px;
+	height: 40px;
+	margin: 10px 65px;
+	text-align: center;
 }
 
 .container2 {
-  width: 155px;
-  height: 120px;
-  margin: 10px 65px;
+	width: 155px;
+	height: 120px;
+	margin: 10px 65px;
 }
 
 .score-design {
-  width: 155px;
-  height: 45px;
-  margin: 10px 65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 155px;
+	height: 45px;
+	margin: 10px 65px;
+	display: flex;
+	align-items: center;
 }
 
 button {
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
-  color: #9aabd8;
-  background-color: transparent;
-  border: 2px solid #9aabd8;
-  border-radius: 4px;
-  cursor: pointer;
+	font-family: "digital-clock-font";
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	color: #9aabd8;
+	background-color: transparent;
+	border: 2px solid #9aabd8;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.reset-btn {
+	width: 80px;
+	height: 30px;
 }

@@ -23,16 +23,23 @@
 
         <div class="score row">
             <div class="score-home score-design">
+                <button onclick="minus1home()" class="minus1">-1</button>
                 <button onclick="plus1home()" class="plus1">+ 1</button>
                 <button onclick="plus2home()" class="plus2">+ 2</button>
                 <button onclick="plus3home()" class="plus3">+ 3</button>
             </div>
             <div class="score-guest score-design">
+                <button onclick="minus1guest()" class="plus1">- 1</button>
                 <button onclick="plus1guest()" class="plus1">+ 1</button>
                 <button onclick="plus2guest()" class="plus2">+ 2</button>
                 <button onclick="plus3guest()" class="plus3">+ 3</button>
             </div>
         </div>
+        <div class="reset">
+            <button onclick="reset()" class="reset-btn">RESET</button>
+        </div>
+
+
     </div>
     <script src="script.js"></script>
 </body>
