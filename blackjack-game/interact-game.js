@@ -1,15 +1,29 @@
-let firstCard = 10;
-let secondCard = 6;
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
+function getRandomCard() {
+	let card = Math.floor(Math.random() * 13) + 1;
+	if (card === 1) {
+		return 11;
+	} else if (card > 10) {
+		return 10;
+	} else {
+		return card;
+	}
+}
+
 function startGame() {
+	isAlive = true;
+	let firstCard = getRandomCard();
+	let secondCard = getRandomCard();
+	cards.push(firstCard, secondCard);
+	sum = firstCard + secondCard;
 	renderGame();
 }
 
@@ -20,7 +34,7 @@ function renderGame() {
 		message = "Gì dị trời, 21 luôn!";
 		hasBlackJack = true;
 	} else {
-		message = "Cậu thua rồi, ván sau gấp đôi tiền ei!";
+		message = "Quắc rùi, ván sau gấp đôi tiền ei!";
 		isAlive = false;
 	}
 
@@ -35,7 +49,7 @@ function renderGame() {
 }
 
 function newCards() {
-	let card = 1;
+	let card = getRandomCard();
 	sum += card;
 	cards.push(card);
 	renderGame();
