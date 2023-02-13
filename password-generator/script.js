@@ -90,4 +90,41 @@ const characters = [
 	".",
 	"?",
 	"/",
-];
+]
+
+let password1 = document.getElementById("password1")
+let password2 = document.getElementById("password2")
+
+let pwd1 = []
+let pwd2 = []
+
+let pushRandom = (data) => {
+	for (let i = 0; i < 15; i++) {
+		let randomCharacter =
+			characters[Math.floor(Math.random() * characters.length)]
+		data.push(randomCharacter)
+	}
+}
+
+let printScreen1 = (data) => {
+	for (let i = 0; i < data.length; i++) {
+		password1.textContent += data[i]
+	}
+}
+
+let printScreen2 = (data) => {
+	for (let i = 0; i < data.length; i++) {
+		password2.textContent += data[i]
+	}
+}
+
+let generated = () => {
+	pushRandom(pwd1)
+	if (password1.textContent === "") {
+		printScreen1(pwd1)
+	}
+	pushRandom(pwd2)
+	if (password2.textContent === "") {
+		printScreen2(pwd2)
+	}
+}

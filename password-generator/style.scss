@@ -1,0 +1,29 @@
+$primary: #10B981;
+$secondary: #273549;
+
+body {
+    background-color: #000;
+}
+
+.content {
+    background-color: $secondary;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+}
+
+#password1 {
+    background-color: #10B981;
+}
+
+#password2 {
+    background-color: red;
+}

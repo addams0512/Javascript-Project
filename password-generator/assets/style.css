@@ -1,0 +1,27 @@
+body {
+	background-color: #000;
+}
+
+.content {
+	background-color: #273549;
+	width: 550px;
+	height: 550px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.password {
+	display: flex;
+	text-decoration: column;
+}
+
+#password1 {
+	background-color: #10b981;
+}
+
+#password2 {
+	background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
