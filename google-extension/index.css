@@ -17,7 +17,23 @@ button {
 	background-color: #5f9341;
 	color: white;
 	padding: 10px 20px;
-	border: none;
+	border: solid 1px #5f9341;
+	font-weight: bold;
+}
+
+#delete-btn {
+	background-color: #fff;
+	color: #5f9341;
+	padding: 10px 20px;
+	border: 1px solid #5f9341;
+	font-weight: bold;
+}
+
+#delete-btn:hover {
+	background-color: #5f9341;
+	color: white;
+	padding: 10px 20px;
+	border: solid 1px #5f9341;
 	font-weight: bold;
 }
 
@@ -33,14 +49,10 @@ ul {
 	padding-left: 0;
 }
 
-li {
-	padding-left: 0;
-	line-height: 5px;
-}
-
 li a {
 	padding-left: 0;
 	color: #5f9341;
+	line-height: 20px;
 }
 
 #ul-el {
