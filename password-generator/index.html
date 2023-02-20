@@ -10,14 +10,20 @@
 </head>
 
 <body>
-    <div class="content">
-        <h1>Generate a</h1>
-        <h2>random password</h2>
-        <p>Never use an insecure password again.</p>
-        <button onclick="generated()">Generate passwords</button>
-        <div class="password">
-            <div id="password1"></div>
-            <div id="password2"></div>
+    <div class="container">
+        <div id="header">
+            <h1>Generate a random password</h1>
+        </div>
+        <div id="generated-btn">
+            <button onclick="generated()">Generate passwords</button>
+        </div>
+        <div id="password">
+            <input id="password1" placeholder="password1">
+            <input id="password2" placeholder="password2">
+        </div>
+        <div id="cop-btn">
+            <button id="copy-btn1" onclick="copy1()">Copy password1</button>
+            <button id="copy-btn2" onclick="copy2()">Copy password2</button>
         </div>
     </div>
     <script src="script.js"></script>

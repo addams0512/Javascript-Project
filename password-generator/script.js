@@ -92,13 +92,13 @@ const characters = [
 	"/",
 ]
 
-let password1 = document.getElementById("password1")
-let password2 = document.getElementById("password2")
+const password1 = document.getElementById("password1")
+const password2 = document.getElementById("password2")
 
 let pwd1 = []
 let pwd2 = []
 
-let pushRandom = (data) => {
+const pushRandom = (data) => {
 	for (let i = 0; i < 15; i++) {
 		let randomCharacter =
 			characters[Math.floor(Math.random() * characters.length)]
@@ -106,25 +106,40 @@ let pushRandom = (data) => {
 	}
 }
 
-let printScreen1 = (data) => {
+const printScreen1 = (data) => {
 	for (let i = 0; i < data.length; i++) {
-		password1.textContent += data[i]
+		password1.value += data[i]
 	}
 }
 
-let printScreen2 = (data) => {
+const printScreen2 = (data) => {
 	for (let i = 0; i < data.length; i++) {
-		password2.textContent += data[i]
+		password2.value += data[i]
 	}
 }
 
-let generated = () => {
+const generated = () => {
+	pwd1 = []
+	pwd2 = []
+	password1.value = ""
+	password2.value = ""
 	pushRandom(pwd1)
-	if (password1.textContent === "") {
-		printScreen1(pwd1)
-	}
+	printScreen1(pwd1)
 	pushRandom(pwd2)
-	if (password2.textContent === "") {
-		printScreen2(pwd2)
-	}
+	printScreen2(pwd2)
+}
+
+//how to copy the text from input field
+const copyText = (data) => {
+	data.select()
+	data.setSelectionRange(0, 99999)
+	document.execCommand("copy")
+}
+
+const copy1 = () => {
+	copyText(password1)
+}
+
+const copy2 = () => {
+	copyText(password2)
 }

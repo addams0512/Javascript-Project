@@ -1,0 +1,31 @@
+body {
+  background-color: #273549;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #10B981;
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(16, 185, 129, 0.2);
+}
+
+.password {
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#password1 {
+  background-color: #10B981;
+}
+
+#password2 {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
