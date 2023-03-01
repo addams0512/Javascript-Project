@@ -5,7 +5,7 @@ const timeLeft = document.querySelector("#time-left")
 
 let result = 0
 let hitPosition = 0
-let currentTime = 10
+let currentTime = 60
 
 let randomSquare = () => {
 	squares.forEach((square) => {
@@ -28,13 +28,14 @@ squares.forEach((square) => {
 
 function moveMole() {
 	let timerId = null
-	timerId = setInterval(randomSquare, 1000)
+	timerId = setInterval(randomSquare, 500)
 }
 
 function countDown() {
 	if (currentTime === 0) {
 		clearInterval(countDownTimerId)
 		alert(`Time over, your score is ${result} `)
+		currentTime === 60
 	}
 	currentTime--
 	timeLeft.textContent = currentTime
